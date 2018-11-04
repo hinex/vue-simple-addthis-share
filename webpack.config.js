@@ -2,7 +2,7 @@ const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-    entry: './src/AddThis.vue',
+    entry: './src/main.js',
     mode: 'production',
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -14,6 +14,10 @@ module.exports = {
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
+            },
+            {
+                test: /\.js$/,
+                use: 'babel-loader'
             }
         ]
     },

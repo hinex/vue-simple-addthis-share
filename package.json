@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/hinex/vue-simple-addthis-share#readme",
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-loader": "^8.0.4",
     "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.24.0",
