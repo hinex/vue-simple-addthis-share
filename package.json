@@ -1,11 +1,18 @@
 {
   "name": "vue-simple-addthis-share",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple AddThis share component for Vue.js",
-  "keywords": ["vuejs", "vuejs2", "vue", "share", "addthis"],
-  "main": "src/AddThis.vue",
+  "keywords": [
+    "vuejs",
+    "vuejs2",
+    "vue",
+    "share",
+    "addthis"
+  ],
+  "main": "dist/addthis.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/hinex/vue-simple-addthis-share/issues"
   },
-  "homepage": "https://github.com/hinex/vue-simple-addthis-share#readme"
+  "homepage": "https://github.com/hinex/vue-simple-addthis-share#readme",
+  "devDependencies": {
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2"
+  }
 }

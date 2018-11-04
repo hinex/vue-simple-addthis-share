@@ -1,7 +1,7 @@
 <template>
   <div
-      v-bind="$attrs"
-      class="addthis_inline_share_toolbox"
+    v-bind="$attrs"
+    class="addthis_inline_share_toolbox"
   />
 </template>
 
