@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-addthis-share",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple AddThis share component for Vue.js",
   "keywords": ["vuejs", "vuejs2", "vue", "share", "addthis"],
   "main": "src/AddThis.vue",

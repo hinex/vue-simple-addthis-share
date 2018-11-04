@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: "AddThis.vue",
+    name: "AddThis",
     props: {
       publicId: {
         type: String,
