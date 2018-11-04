@@ -6,8 +6,9 @@ module.exports = {
     mode: 'production',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
-        filename: 'addthis.js'
+        filename: 'addthis.js',
+        library: "AddThis",
+        libraryTarget: "commonjs2",
     },
     module: {
         rules: [

@@ -19,14 +19,16 @@
       },
     },
     mounted() {
-      if (document.getElementById('addthis-share') !== null) {
-        return window.addthis.layers.refresh();
-      }
+      if (process.browser) {
+        if (document.getElementById('addthis-share') !== null) {
+          return window.addthis.layers.refresh();
+        }
 
-      const el = document.createElement('script');
-      el.setAttribute('id', 'addthis-share')
-      el.setAttribute('src', `${this.cdn}#pubid=${this.publicId}`)
-      document.body.appendChild(el);
+        const el = document.createElement('script');
+        el.setAttribute('id', 'addthis-share')
+        el.setAttribute('src', `${this.cdn}#pubid=${this.publicId}`)
+        document.body.appendChild(el);
+      }
     }
   }
 </script>

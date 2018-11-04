@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-addthis-share",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Simple AddThis share component for Vue.js",
   "keywords": [
     "vuejs",
@@ -12,7 +12,7 @@
   "main": "dist/addthis.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && webpack --config webpack.config.js"
+    "build": "rm dist/addthis.js && webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
