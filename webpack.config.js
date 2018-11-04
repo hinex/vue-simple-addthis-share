@@ -3,6 +3,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
     entry: './src/AddThis.vue',
+    mode: 'production',
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
@@ -17,6 +18,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin({
+            productionMode: true
+        })
     ]
 }
