@@ -1,0 +1,19 @@
+{
+  "name": "vue-simple-addthis-share",
+  "version": "0.0.1",
+  "description": "Simple AddThis share component for Vue.js",
+  "main": "src/AddThis.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinex/vue-simple-addthis-share.git"
+  },
+  "author": "Roman Hinex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hinex/vue-simple-addthis-share/issues"
+  },
+  "homepage": "https://github.com/hinex/vue-simple-addthis-share#readme"
+}
