@@ -10,11 +10,20 @@ npm install vue-simple-addthis-share --save
 
 ### Usage
 
-```js
-import AddThis from 'vue-simple-addthis-share'
+```html
+<script>
+  import AddThis from 'vue-simple-addthis-share'
+    
+  export default {
+    name: "AwesomeComponent",
+    components: {
+      AddThis,
+    }
+  }
+</script>
 ```
 
-#### Simple usage:
+#### Template area:
 
 ```html
 <template>
