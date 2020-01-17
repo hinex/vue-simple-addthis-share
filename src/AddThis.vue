@@ -21,7 +21,7 @@
     mounted() {
       if (process.browser) {
         if (document.getElementById('addthis-share') !== null) {
-          return window.addthis.layers.refresh();
+          return window.addthis && window.addthis.layers.refresh();
         }
 
         const el = document.createElement('script');
