@@ -17,6 +17,10 @@
         type: String,
         default: '//s7.addthis.com/js/300/addthis_widget.js'
       },
+      async: {
+        type: Boolean,
+        required: false
+      }
     },
     mounted() {
       if (process.browser) {
@@ -25,8 +29,9 @@
         }
 
         const el = document.createElement('script');
-        el.setAttribute('id', 'addthis-share')
-        el.setAttribute('src', `${this.cdn}#pubid=${this.publicId}`)
+        el.setAttribute('id', 'addthis-share');
+        el.setAttribute('src', `${this.cdn}#pubid=${this.publicId}`);
+        this.async && el.setAttribute('async', true);
         document.body.appendChild(el);
       }
     }
