@@ -58,6 +58,7 @@ You can pass AddThis attributes like a pros for title, media etc ([AddThis props
     data-title="THE TITLE"
     data-description="THE DESCRIPTION"
     data-media="THE IMAGE"
+    :async="true" 
   />
 </template>
 ```
